@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Form</title>
+
+    <style>
+        form {
+            width: 300px;
+            margin: 100px auto;
+            padding: 30px;
+            border: 1px solid #DCDCDC;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #DCDCDC;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            color: #fff;
+            background: #0099CC;
+            border: 0;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="/auth/signin" method="POST">
+        <h1>Signin</h1>
+
+        <label>Name</label>
+        <input type="text" name="email" />
+
+        <label>Password</label>
+        <input type="password" name="password" />
+
+
+        <input type="submit" value="Signin" />
+
+    </form>
+
+</body>
+
+</html>
